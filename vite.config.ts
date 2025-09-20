@@ -6,7 +6,7 @@ export default defineConfig({
   root: './frontend-master',
   plugins: [react()],
   css: {
-    postcss: './postcss.config.js',
+    postcss: '../postcss.config.js',
   },
   build: {
     outDir: '../dist',
