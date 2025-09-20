@@ -1,0 +1,16 @@
+{
+  "name": "frontend-master",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "LearnLite Frontend",
+  "main": "src/main.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

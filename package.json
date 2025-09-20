@@ -7,14 +7,22 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:frontend": "npm run dev -w frontend-master",
+    "build:frontend": "npm run build -w frontend-master",
+    "lint:frontend": "npm run lint -w frontend-master"
   },
+  "workspaces": [
+    "frontend-master",
+    "backend-master"
+  ],
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@tailwindcss/postcss": "^4.1.13",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.2",
